@@ -31,6 +31,7 @@
   --hero-button-color: #2196f3;
   --hero-button-active-color: #188ce8;
   --hero-button-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  --features-preview-bg-color: #f5f4fa;
 
   --teammate-social-link-inactive-bg: #ffffff;
   --teammate-social-link-active-bg: #2196f3;
@@ -160,6 +161,15 @@ body {
   color: var(--main-text-color);
 }
 
+.contacts-list a[href*='mailto']::before {
+  content: '';
+  display: inline-flex;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  background-image: url('../images/svg/optimized/envelope.svg');
+}
+
 .pages-list .link,
 .contacts-list .link {
   display: block;
@@ -256,6 +266,32 @@ body {
 .features-list > .item:not(:last-child) {
   margin-right: 30px;
 }
+
+.features-list > .item::before {
+  content: '';
+  display: block;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-color: var(--features-preview-bg-color);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-antenna::before {
+  background-image: url('../images/svg/optimized/antenna.svg');
+}
+.icon-clock::before {
+  background-image: url('../images/svg/optimized/clock.svg');
+}
+.icon-diagram::before {
+  background-image: url('../images/svg/optimized/diagram.svg');
+}
+.icon-astronaut::before {
+  background-image: url('../images/svg/optimized/astronaut.svg');
+}
+
 .feature-heading,
 .feature-description {
   margin: 0;
