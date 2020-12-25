@@ -123,8 +123,8 @@ body {
 
 .navigation .logo {
   display: block;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  /* padding-top: 24px;
+  padding-bottom: 25px; */
   margin-right: 93px;
 }
 /* navigation */
@@ -157,17 +157,11 @@ body {
   margin-left: auto;
 }
 
-.contacts-list .link {
+.contacts-list > .item > .link {
+  display: flex;
+  align-items: center;
   color: var(--main-text-color);
-}
-
-.contacts-list a[href*='mailto']::before {
-  content: '';
-  display: inline-flex;
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  background-image: url('../images/svg/optimized/envelope.svg');
+  line-height: inherit;
 }
 
 .pages-list .link,

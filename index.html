@@ -13,6 +13,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/svg.css">
     <title>Web Studio</title>
   </head>
   <body>
@@ -46,17 +47,22 @@
         </nav>
         <ul class="contacts-list list-reset">
           <li class="item">
-            <a
-              class="link link-reset"
+            <a class="link link-reset"
               href="mailto:info@devstudio.com"
-              lang="en"
-              >info@devstudio.com</a
-            >
+              lang="en">
+              <svg class="icon mail-icon">
+                <use href="./images/svg/icons-sprite.svg#icon-envelope">
+              </svg>
+              <span>info@devstudio.com</span>
+            </a>
           </li>
           <li class="item">
-            <a class="link link-reset" href="tel:+380961111111"
-              >+38 096 111 11 11</a
-            >
+            <a class="link link-reset" href="tel:+380961111111">
+              <svg class="icon phone-icon">
+                <use href="./images/svg/icons-sprite.svg#icon-smartphone"/>
+              </svg>
+              <span>+38 096 111 11 11</span>
+            </a>
           </li>
         </ul>
       </div>
