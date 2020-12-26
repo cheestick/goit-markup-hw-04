@@ -495,7 +495,7 @@ body {
 
 .social-link {
   display: flex;
-  /* align-items: center; */
+  align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
