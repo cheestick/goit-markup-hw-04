@@ -245,7 +245,9 @@ body {
 }
 
 /* features */
-.features-section {
+.features-section,
+.team,
+.clients-section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -309,7 +311,8 @@ body {
 }
 
 .directions-heading,
-.team-heading {
+.team-heading,
+.clients-heading {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -335,8 +338,6 @@ body {
 /* our team */
 .team {
   background-color: var(--section-bg-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .team-heading {
@@ -384,6 +385,13 @@ body {
   font-size: 16px;
   line-height: 1.19;
   margin: 0;
+}
+
+/* clients section */
+.clients-heading {
+  margin-top: 0;
+  margin-bottom: 50px;
+  text-align: center;
 }
 
 /* footer address */
