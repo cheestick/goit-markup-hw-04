@@ -85,6 +85,11 @@ body {
   text-decoration: none;
 }
 
+.link-reset:visited,
+.link-reset:active {
+  color: inherit;
+}
+
 .page-header {
   border-bottom: 1px solid var(--border-separator-color);
 }
@@ -392,6 +397,70 @@ body {
   margin-top: 0;
   margin-bottom: 50px;
   text-align: center;
+}
+
+.clients-list {
+  display: flex;
+  color: var(--svg-inactive-fill);
+}
+
+.icon-wrapper:not(:last-child) {
+  margin-right: 30px;
+}
+
+.client-icon {
+  display: flex;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid var(--svg-inactive-fill);
+  border-radius: 4px;
+}
+
+.client-icon:hover,
+.client-icon:focus {
+  border-color: var(--svg-active-fill);
+}
+
+.client-icon:hover .client-logo {
+  fill: var(--svg-active-fill);
+}
+
+.client-icon > .client-logo {
+  fill: currentColor;
+  align-self: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.logo-1 {
+  width: 45px;
+  height: 50px;
+}
+
+.logo-2 {
+  width: 40px;
+  height: 52px;
+}
+
+.logo-3 {
+  width: 41px;
+  height: 43px;
+}
+
+.logo-4 {
+  width: 80px;
+  height: 42px;
+}
+
+.logo-5 {
+  width: 59px;
+  height: 47px;
+}
+
+.logo-6 {
+  width: 88px;
+  height: 45px;
 }
 
 /* footer address */
