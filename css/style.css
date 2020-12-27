@@ -390,6 +390,13 @@ body {
   font-size: 16px;
   line-height: 1.19;
   margin: 0;
+  margin-bottom: 16px;
+}
+
+.card-description > .social-networks {
+  width: 206px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /* clients section */
@@ -510,7 +517,6 @@ body {
 }
 
 .icon-social-network {
-  /* align-self: center; */
   margin-left: auto;
   margin-right: auto;
 }

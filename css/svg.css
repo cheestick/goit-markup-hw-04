@@ -48,3 +48,11 @@
   height: 20px;
   fill: #ffffff;
 }
+
+.card-description .icon-social-network {
+  fill: var(--teammate-social-link-logo-fill);
+}
+
+.card-description .social-link:hover > .icon-social-network {
+  fill: var(--teammate-social-link-logo-active);
+}
