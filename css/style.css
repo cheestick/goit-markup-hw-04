@@ -483,6 +483,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  color: var(--logo-font-white);
 }
 
 .social-networks {
