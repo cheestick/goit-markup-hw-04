@@ -196,7 +196,12 @@ body {
 /* hero section */
 .hero {
   height: 600px;
-  min-width: 1600px;
+  max-width: 1600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
   background-color: var(--hero-bg-color);
   background-image: linear-gradient(
       var(--hero-bg-overlay-color),
@@ -204,10 +209,6 @@ body {
     ),
     url('../images/hero/optimized/hero-bg-o.jpg');
   background-repeat: no-repeat;
-  background-position: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  text-align: center;
 }
 
 .hero h1 {
@@ -399,6 +400,11 @@ body {
   margin-left: auto;
 }
 
+.card-description .social-link:hover,
+.card-description .social-link:focus {
+  outline: transparent;
+}
+
 /* clients section */
 .clients-heading {
   margin-top: 0;
@@ -427,9 +433,11 @@ body {
 .client-icon:hover,
 .client-icon:focus {
   border-color: var(--svg-active-fill);
+  outline: transparent;
 }
 
-.client-icon:hover .client-logo {
+.client-icon:hover .client-logo,
+.client-icon:focus .client-logo {
   fill: var(--svg-active-fill);
 }
 
@@ -585,8 +593,10 @@ body {
   flex-direction: column-reverse;
 }
 
-.card > .link:hover {
+.card > .link:hover,
+.card > .link:focus {
   box-shadow: var(--portfolio-card-hover-shadow);
+  outline: transparent;
 }
 
 .card .link,

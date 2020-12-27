@@ -53,6 +53,7 @@
   fill: var(--teammate-social-link-logo-fill);
 }
 
-.card-description .social-link:hover > .icon-social-network {
+.card-description .social-link:hover > .icon-social-network,
+.card-description .social-link:focus > .icon-social-network {
   fill: var(--teammate-social-link-logo-active);
 }
