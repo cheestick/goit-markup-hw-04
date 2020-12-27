@@ -13,6 +13,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/svg.css" />
     <title>Web Studio</title>
   </head>
   <body>
@@ -44,23 +45,26 @@
             </li>
           </ul>
         </nav>
-
         <ul class="contacts-list list-reset">
           <li class="item">
-            <a
-              class="link link-reset"
+            <a class="link link-reset"
               href="mailto:info@devstudio.com"
-              lang="en"
-              >info@devstudio.com</a
-            >
+              lang="en">
+              <svg class="icon mail-icon">
+                <use href="../images/svg/icons-sprite.svg#icon-envelope">
+              </svg>
+              <span>info@devstudio.com</span>
+            </a>
           </li>
           <li class="item">
-            <a class="link link-reset" href="tel:+380961111111"
-              >+38 096 111 11 11</a
-            >
+            <a class="link link-reset" href="tel:+380961111111">
+              <svg class="icon phone-icon">
+                <use href="../images/svg/icons-sprite.svg#icon-smartphone"/>
+              </svg>
+              <span>+38 096 111 11 11</span>
+            </a>
           </li>
-        </ul>
-      </div>
+        </ul>      </div>
     </header>
     <!-- main portfolio examles and filters container -->
     <main class="main">
@@ -280,6 +284,45 @@
             </li>
           </ul>
         </address>
+        <div class="join-container">
+          <h2 class="join-heading">присоединяйтесь</h2>
+          <ul class="list-reset social-networks">
+            <li class="item">
+              <a href="" class="link-reset social-link">
+                <svg class="icon-social-network">
+                  <use
+                    href="../images/svg/icons-sprite.svg#icon-instagram"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="link-reset social-link">
+                <svg class="icon-social-network">
+                  <use href="../images/svg/icons-sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="link-reset social-link">
+                <svg class="icon-social-network">
+                  <use
+                    href="../images/svg/icons-sprite.svg#icon-facebook"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a href="" class="link-reset social-link">
+                <svg class="icon-social-network">
+                  <use
+                    href="../images/svg/icons-sprite.svg#icon-linkedin"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>
